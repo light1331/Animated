@@ -1,0 +1,594 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: robotoMedium;
+}
+
+@font-face { /*--Custom Fonts Roboto Medium--*/
+   font-family: robotoMedium;
+   src: url(Roboto-Medium.ttf);
+}
+
+@font-face { /*--Custom Font Lemon Milk Bold--*/
+   font-family: lemonBold;
+   src:url(LEMONMILK-Bold.otf);
+}
+
+@font-face {
+   font-family: lemonRegular;
+   src:url(LEMONMILK-Regular.otf);
+}
+
+@font-face { /*--Custom Font Raylig Medium--*/
+   font-family: rayligMedium;
+   src:url(RayligMedium-0Wq0R.otf);
+}
+
+@font-face { /*--Custom Font Raylig Regular--*/
+   font-family: rayligRegular;
+   src:url(RayligRegular-eZPn6.otf);
+}
+
+@font-face {  /*--Custom Font Cassandra--*/
+   font-family: cassandra;
+   src:url(/Cassandra.ttf);
+}
+
+@font-face {
+   font-family: lafemme;
+   src:url(LafemmevibeRegular.otf);
+}
+
+/*---Main Styling Starts From Here---*/
+.main-wrapper {
+   background-color: #000;
+   color: #FFF;
+}
+
+.hero-section {
+   height: 100vh;
+   width: 100%;
+   background-color: #000;
+   color: #fff;
+   padding-top: 23vh;
+   position: relative;
+   overflow-x: hidden;
+}
+
+/*---navbar---*/
+#navbar {
+   width: 100%;
+   height: 100px;
+   padding: 3vh;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   color: #FFF;
+   position: fixed;
+   top: 0;
+   z-index: 999;
+}
+
+#navbar #navLogo {
+   font-family: lemonRegular;
+   font-weight: 500;
+}
+
+#navLogo span {
+   font-family: lafemme;
+   font-size: 3rem;
+   text-transform: uppercase;
+}
+
+#navbar #menu {
+   font-family: lemonRegular;
+   font-weight: 300;
+   color: #FFF;
+}
+
+#fullMenu {
+   height: 100%;
+   width: 100%;
+   background-color: #91929E;
+   color: #000;
+   position: fixed;
+   top: 0;
+   right: -100%;
+   z-index: 999;
+   padding: 25vh 4vh 0 4vh;
+}
+
+#fullMenu h1 {
+   font-family: lemonRegular;
+   font-weight: 400;
+   font-size: 2.55rem;
+   text-transform: uppercase;
+   text-align: left;
+   margin: 2vh 0;
+}
+
+#fullMenu #close {
+   font-family: lemonRegular;
+   font-weight: 300;
+   position: absolute;
+   top: 7%;
+   right: 7%;
+}
+/*---navbar ended---*/
+
+.hero-section .hero-title {
+   display: flex;
+   flex-direction: column;
+   row-gap: 25vh;
+   margin: 0 auto;
+}
+
+.hero-section .hero-title h1 {
+   text-transform: uppercase;
+   text-align: center;
+   font-family: lemonRegular;
+   font-size: 5.5rem;
+   letter-spacing: 5px;
+   line-height: 6rem;
+   z-index: 10;
+}
+
+.hero-section .hero-title h1 span {
+   text-transform: uppercase;
+   text-align: center;
+   font-family: lafemme;
+   font-size: 7.5rem;
+   z-index: 10;
+}
+
+.hero-section .hero-text {
+   display: block;
+   margin: 4vh auto 0 auto;
+}
+
+.hero-section .hero-text h3 {
+   text-transform: capitalize;
+   text-align: center;
+   font-family: robotoRegular;
+   font-weight: 400;
+   line-height: 1.55rem;
+}
+
+.hero-section .hero-img {
+   height: 35vh;
+   object-fit: cover;
+   object-position: center;
+   border-radius: 15px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -85%);
+   opacity: 0;
+}
+
+.hero-section .hero-img:nth-child(1) {
+   z-index: 5;
+}
+.hero-section .hero-img:nth-child(2) {
+   z-index: 4;
+}
+.hero-section .hero-img:nth-child(3) {
+   z-index: 3;
+}/*---Hero Section Ended---*/
+
+
+
+.brand-section { /*---Brand Section Styling---*/
+   min-height: 80vh;
+   width: 100%;
+   background-color: #000;
+   color: #fff;
+   position: relative;
+   padding: 10vh 0 5vh 0;
+}
+
+.brand-section #brand-text {
+   display: block;
+   margin: 0 auto;
+   font-family: lemonRegular;
+   font-size: 3.15rem;
+   font-weight: 700;
+   letter-spacing: 3px;
+   text-transform: uppercase;
+   text-align: center;
+}
+
+.brand-section #brand-text span {
+   text-transform: uppercase;
+   text-align: center;
+   font-family: lafemme;
+   font-size: 4.15rem;
+}
+
+.brand-section #brand-text .brand-img {
+   height: 50px;
+   width: 65px;
+   object-position: center;
+   object-fit: cover;
+   border-radius: 7px;
+}
+
+.brand-section #brand-text-small {
+   margin: 5vh auto;
+}
+
+.brand-section #brand-text-small h2 {
+   font-family: robotoRegular;
+   font-weight: 400;
+   text-align: center;
+   text-transform: capitalize;
+   color: #FFF;
+   display: block;
+} /*--Brand Section Ended--*/
+
+
+
+.work-section {
+   height: 100vh;
+   width: 100%;
+   position: relative;
+   overflow-x: hidden;
+   margin-top: 10vh;
+}
+
+.image-slider-con{
+   display: flex;
+   white-space: nowrap;
+   column-gap: 5vh;
+   padding-left: 4vh;
+   margin: 25% auto 0 auto;
+   transform: translateX(95%);
+}
+
+.work-section .image-slider-con .img-slider {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   row-gap: 2vh;
+}
+
+.image-slider-con .img-slider img {
+   height: 55vh;
+   width: 85vw;
+   object-fit: cover;
+   object-position: center;
+   border-radius: 20px;
+}
+
+.img-slider .slider-text small {
+   text-transform: uppercase;
+   text-align: left;
+   font-family: lemonRegular;
+   display: block;
+}
+
+.img-slider .slider-text big {
+   font-size: 1.5rem;
+   font-family: lemonRegular;
+   text-transform: uppercase;
+   text-align: left;
+}
+
+.img-slider .slider-text big span {
+   font-family: lafemme;
+   font-size: 2rem;
+}
+
+.work-text {
+   text-transform: uppercase;
+   text-align: left;
+   font-family: lemonRegular;
+   font-weight: 400;
+   font-size: 0.85rem;
+   margin: 2vh 0 0 3vh;
+} 
+
+.img-slider-last>.img {
+   height: 55vh;
+   width: 85vw;
+   background-color: #111;
+   border-radius: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   column-gap: 30px;
+}
+
+.img-slider-last .img .slider-btn {
+   height: 40px;
+   width: 40px;
+   background-color: #C87AE0;
+   color: #000;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   column-gap: 20px;
+   font-size: 1.5rem;
+}
+
+.img-slider-last .img small {
+   font-family: robotoRegular;
+   text-transform: capitalize;
+   font-size: 1.2rem;
+}
+/*---Approch Section Ended---*/
+
+
+
+.approch-section {
+   min-height: 180vh;
+   width: 100%;
+   background-image: 
+   linear-gradient(to top, rgba(0,0,0,0.4), rgba(0,0,0,0.99)),
+   url(work-image.jpg);
+   background-size: cover;
+   background-position: center;
+   background-attachment: fixed;
+   position: relative;
+   padding: 2vh;
+   margin: 10vh 0 0 0;
+   overflow-x: hidden;
+}
+
+.approch-section .approch-title {
+   margin: 40vh auto 6vh auto;
+   padding: 0 2vh;
+   font-family: lemonRegular;
+}
+
+.approch-title h1 {
+   font-size: 2.75rem;
+   font-weight: 600;
+   line-height: 3.35rem;
+   text-transform: uppercase;
+   text-align: left;
+   display: inline-block;
+   margin-right: 5px;
+}
+.approch-title h1 span{
+   font-family: lafemme;
+   font-size: 3.75rem;
+   text-transform: uppercase;
+   text-align: left;
+}
+
+.approch-facility h1 {
+   font-family: robotoRegular;
+   font-weight: 400;
+   font-size: 1.45rem;
+   text-transform: capitalize;
+   text-align: left;
+   margin: 2vh 0 0 0;
+   border-bottom: 1.5px solid #FFF;
+}
+
+.approch-btn-con {
+   display: flex;
+   align-items: center;
+   column-gap: 15px;
+   margin: 8vh auto 3vh auto;
+}
+
+.approch-btn-con .approch-btn {
+   height: 45px;
+   width: 45px;
+   background-color: #DB7EDA;
+   color: #000;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.approch-btn i {
+   font-size: 1.55rem;
+}
+
+.approch-btn-con small {
+   text-transform: capitalize;
+   font-family: robotoRegular;
+   font-size: 1.25rem;
+}
+
+.approch-footer{
+   margin: 7vh auto 2vh auto;
+}
+.approch-footer h3{
+   font-family: robotoRegular;
+   font-weight: 400;
+   text-align: left;
+   text-transform: capitalize;
+} /*----Approch Section Ended----*/
+
+
+
+.footer-section {
+   min-height: 200vh;
+   width: 100%;
+   background: #000;
+   color: 000;
+   position: relative;
+   overflow: hidden;
+}
+
+.footer-title {
+   padding: 2vh 5vh;
+   margin: 12vh 0 0 0;
+}
+
+.footer-title small {
+   text-transform: uppercase;
+   text-align: left;
+   font-family: lemonRegular;
+   display: block;
+   margin-bottom: 10px;
+}
+
+.footer-title h1 {
+   display: block;
+   font-family: lemonRegular;
+   font-size: 3.25rem;
+   font-weight: 700;
+   letter-spacing: 3px;
+   line-height: 3.25rem;
+   text-align: left;
+}
+
+.footer-title h1 span {
+   font-family: lafemme;
+   font-size: 3.65rem;
+   text-transform: uppercase;
+}
+
+
+/*---Slider Animation---*/
+.slider {
+   overflow: hidden;
+   display: flex;
+   background: transparent;
+   padding: 2vh 0;
+   position: relative;
+   margin: 5vh 0 0 0;
+}
+
+.slider .sliderCon {
+   white-space: nowrap;
+   animation: sliderAnime 60s linear infinite;
+}
+
+.slider .sliderCon .sliderItems {
+   padding: 1vh 2vh;
+   opacity: 0.15;
+   color: #FFF;
+   text-transform: uppercase;
+   text-align: center;
+   font-family: lemonRegular;
+   font-size: 3rem;
+   display: inline-block;
+   margin: 0 3vh;
+}
+
+.sliderItems span {
+   font-family: lafemme;
+   font-size: 4rem;
+   text-transform: uppercase;
+}
+
+@keyframes sliderAnime {
+   from{ transform: translateX(0); }
+   to{ transform: translateX(-100%); }
+}
+/*--Hover State--*/
+.slider:hover .sliderCon {
+   animation-play-state: paused;
+}
+
+/*--Fade Outs--*/
+.slider::before, .slider::after {
+   content: '';
+   position: absolute;
+   top: 0;
+   height: 100%;
+   width: 150px;
+   z-index: 9;
+}
+
+.slider::before{
+   left: 0;
+   background-image: 
+   linear-gradient(to left, rgba(0,0,0,0), #000);
+}
+.slider::after{
+   right: 0;
+   background-image:
+   linear-gradient(to right, rgba(0, 0, 0, 0), #000);
+}
+/*---Slider Ended---*/
+
+
+.footer-text {
+   margin: 30vh auto 0 auto;
+   display: block;
+}
+
+.footer-text h1 {
+   text-align: center;
+   text-transform: uppercase;
+   font-family: lemonRegular;
+   font-size: 6rem;
+   font-weight: 550;
+   line-height: 5.75rem;
+   letter-spacing: -3px;
+   z-index: 2;
+}
+.footer-text h1 span {
+   font-family: lafemme;
+   font-size: 7rem;
+   text-transform: uppercase;
+   text-align: center;
+}
+.footer-text h1 img {
+   width: 100px;
+   height: 90px;
+   object-fit: cover;
+   object-position: center;
+   border-radius: 10px;
+   margin-left: -10px;
+   z-index: 1;
+}
+
+.footer-text small {
+   text-transform: uppercase;
+   text-align: center;
+   display: block;
+   margin: 3vh auto 0 auto;
+   font-family: robotoRegular;
+   font-size: 1rem;
+}
+
+.footer-links {
+   margin: 40vh 0 0 0;
+   padding: 0 5vh;
+}
+
+.footer-links h1 {
+   text-transform: uppercase;
+   text-align: left;
+   font-family: lemonRegular;
+   font-size: 2rem;
+   color: #7C7C7C;
+}
+
+.footer-links h1:nth-child(4) {
+   margin-bottom: 5vh;
+}
+
+.footer-links a {
+   text-decoration: none;
+   color: #7c7c7c;
+   font-family: robotoRegular;
+   text-transform: uppercase;
+   text-align: left;
+   display: block;
+   margin: 0 0 1vh 0;
+}
+
+.footer-section #footer-logo {
+   font-family: lafemme;
+   font-size: 120vw;
+   text-transform: uppercase;
+   text-align: center;
+   position: absolute;
+   top: 80%;
+   left: 50%;
+   transform: translate(-50%, -50%) rotate(7deg);
+   opacity: 0.085;
+   background-attachment: fixed;
+} /*---footer section ended---*/
